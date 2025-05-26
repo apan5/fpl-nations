@@ -50,7 +50,7 @@ for index, row in df.iterrows():
     df.at[index, 'iso2'] = country[1].lower()
 
 df['flag'] = 'https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/' + df['iso2'] + '.svg'
-app_df = df[['rank', 'flag', 'iso3', 'entry_name', 'player_name', 'event_total', 'total']]
+app_df = df[['flag', 'iso3', 'player_name', 'total']]
 
 # display to app
 st.header(league_name)
