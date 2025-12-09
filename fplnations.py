@@ -23,8 +23,8 @@ def get_iso(id):
 
 
 #there are 2 pages for this league
-json_url_1 = 'https://fantasy.premierleague.com/api/leagues-classic/2579/standings/?page_standings=1'
-json_url_2 = 'https://fantasy.premierleague.com/api/leagues-classic/2579/standings/?page_standings=2'
+json_url_1 = 'https://fantasy.premierleague.com/api/leagues-classic/48095/standings/?page_standings=1'
+json_url_2 = 'https://fantasy.premierleague.com/api/leagues-classic/48095/standings/?page_standings=2'
 
 
 data1 = requests.get(json_url_1).json()
